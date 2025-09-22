@@ -1,0 +1,68 @@
+body {
+  margin: 0;
+  font-family: sans-serif;
+  background-color: #000814;      
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.outer-box {
+  text-align: center;
+  padding: 40px;
+}
+
+.heading {
+  font-size: 40px;
+  font-weight: bold;
+  color: #f3fbb7;        
+  margin-bottom: 50px;
+}
+
+.inner-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 60px;      
+}
+
+.choice {
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  padding: 6px;                        
+  background: linear-gradient(135deg, gold, mediumseagreen) border-box;
+  border: 5px solid transparent;        
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 0 25px rgba(0,0,0,0.4);
+  transition: transform 0.2s ease;
+}
+
+.choice:hover{
+  transform: scale(1.08);
+}
+
+.button {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  border: none;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  cursor: pointer;
+  outline: none;
+}
+
+#rock{
+    background-image: url('Rock.png'); 
+    }
+#paper{
+    background-image: url('paper.png'); 
+}
+#scissors{
+    background-image: url('scissors.png');
+}
