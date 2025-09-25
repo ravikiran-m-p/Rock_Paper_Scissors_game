@@ -3,21 +3,23 @@ const paperBtn = document.getElementById('paper');
 const scissorsBtn = document.getElementById('scissors');
 const choices = ['rock', 'paper', 'scissors'];
 
-function getComputerChoice() {
+function getComputerChoice(){
     return choices[Math.floor(Math.random() * choices.length)];
 }
 
-function getWinner(player, computer) {
-    if (player === computer) return "It's a tie!";
-    if (
+function getWinner(player, computer){
+    if(player === computer) 
+        return "It's a tie!";
+    if(
         (player === 'rock' && computer === 'scissors') ||
         (player === 'paper' && computer === 'rock') ||
         (player === 'scissors' && computer === 'paper')
-    ) return "You win!";
+    )
+        return "You win!";
     return "Computer wins!";
 }
 
-function playGame(playerChoice) {
+function playGame(playerChoice){
     const computerChoice = getComputerChoice();
     const result = getWinner(playerChoice, computerChoice);
     alert(`You chose ${playerChoice}.\nComputer chose ${computerChoice}.\n${result}`);
